@@ -9,9 +9,13 @@ public class GestionMedicos {
 
     // TODO: Método para añadir un medico a la lista 
     public void addMedico(Medico medico) {
+        medicos.add(medico);
     }
     // TODO: Método para listar los medicos de la aplicaicón
     public void listMedicos() {
+        for (Medico medico : medicos) {
+            System.out.println(medico.toString());
+        }
     }
     // Método para buscar especialistas por especialidad
     public void buscarEspecialistas(String especialidad) {
